@@ -1,0 +1,199 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    font-family: 'Noto Sans KR', sans-serif;
+}
+@font-face {
+    font-family: 'BMDOHYEON';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_one@1.0/BMDOHYEON.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+html, body {
+    width: 100%;
+    height: 100%;
+    letter-spacing: -0.65px;
+}
+img {
+    vertical-align: middle;
+}
+a {
+    text-decoration: none;
+    color: #212121;
+}
+.header {
+    position: relative;
+    padding: 0 16px;
+    height: 56px;
+    border-bottom: 1px solid #f5f5f5;
+}
+.logo {
+    position: absolute;
+    left: 16px;
+    padding: 0;
+    margin: 0;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.logo img {
+    width: 100%;
+    height: 19px;
+}
+
+.menu__btn {
+    position: absolute;
+    right: 16px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.menu__btn img {
+    width: 24px;
+    height: 24px;
+}
+.address_text {
+    display: block;
+    min-height: 48px;
+    line-height: 48px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    text-align: center;
+}
+
+.main__banner {
+    width: 100%;
+}
+.swiper-slide img {
+    width: 100%;
+}
+.swiper-pagination {
+    font-family: 'Roboto', sans-serif!important;
+    left: auto!important;
+    right: 16px!important;
+    text-align: center;
+    font-size: 14px;
+    font-weight: 500;
+    width: 46px;
+    height: 22px;
+    line-height: 22px;
+    background: rgba(255,255,255,.48);
+    border-radius: 3rem;
+}
+.main__tabs {}
+.main__tabs--items {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 56px;
+}
+.main__tabs--items li {
+    margin: 0 18px;
+}
+
+.main__tabs--items li .active {
+    position: relative;
+    font-weight: bold;
+}
+.main__tabs--items li .active::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: -5px;
+    padding-bottom: 3px;
+    border-bottom: 3px solid #FF7A42;
+}
+
+.search__box {
+    padding: 0 16px;
+    background-color: #F5F5F5;
+    height: 68px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.search__box input {
+    padding: 0 14px;
+    width: 86%;
+    height: 42px;
+    border: 0;
+    background-color: #fff;
+    border-radius: 3rem;
+}
+.search__box a {
+    display: block;
+}
+.search__box img {
+    width: 24px;
+    height: 24px;
+}
+
+.foodmenu__list {
+    padding: 30px 16px 8px;
+}
+.foodmenu__list::after {
+    content: '';
+    display: block;
+    clear: both;
+}
+.foodmenu__list li {
+    margin-bottom: 26px;
+    float: left;
+    width: 20%;
+}
+.foodmenu__list a {
+    display: block;
+    text-align: center;
+}
+.foodmenu__list img {
+    width: 46px;
+    height: 46px;
+}
+.foodmenu__list span {
+    display: block;
+    margin-top: 8px;
+    font-size: 12px;
+}
+
+.other__list {
+    border-top: 6px solid #f5f5f5;
+    padding: 24px 16px 28px;
+    display: flex;
+}
+.other__list li {
+    padding: 14px 0 16px;
+    width: 33.33%;
+    border: 1px solid #EEE;
+    border-radius: 4px;
+    text-align: center;
+}
+.other__list li:not(:first-of-type) {
+    margin-left: 10px;
+}
+.other__list a {
+    display: block;
+}
+.other__list img {
+    height: 48px;
+}
+.other__list span {
+    font-size: 14px;
+    color: #212121;
+    font-family: 'BMDOHYEON';
+}
+.other__list small {
+    margin: 7px 0 0;
+    display: block;
+    color: #616161;
+    font-size: 10px;
+}
+
+.footer {
+    padding: 0 16px;
+    background-color: #eee;
+
+}
+.footer img {
+    width: 100%;
+}
