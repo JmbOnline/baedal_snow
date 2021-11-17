@@ -66,6 +66,7 @@ a {
 }
 .swiper-slide img {
     width: 100%;
+    max-height: 160px;
 }
 .swiper-pagination {
     font-family: 'Roboto', sans-serif!important;
