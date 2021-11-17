@@ -6,7 +6,7 @@ snow = new DOMParser().parseFromString(svg_str, 'text/xml').children[0]
 snow.style.position = "fixed"
 snow.style.top = '-24px'
 snow.style.zIndex = '100'
-snow.style.color = '#B9E1FF'
+snow.style.color = '#7EC7FF'
 
 // new snowflake
 let newSnow = () => {
@@ -52,7 +52,7 @@ if(window.matchMedia && window.matchMedia('(prefers-reduced-motion: true)').matc
 		// wait 10 seconds if the user is not active
 		// if (navigator.userActivation && !navigator.userActivation.isActive) return await wait(10000);
 		if (document.visibilityState && document.visibilityState != 'visible') return await wait(10000).then(() => console.log('page was not visible'));
-		await wait(Math.max(3 * Math.random(), 1) * 600)
+		await wait(Math.max(3 * Math.random(), 1) * 400)
 		newSnow();
 	})
 }
